@@ -2311,15 +2311,11 @@ iframe {
         font-size: 28px;
     }
 
-    .hero-subtitle {}
-
     .hero-actions {
         justify-content: left;
         flex-wrap: nowrap;
         gap: 7px;
     }
-
-    .hero-actions .btn {}
 
     .form-card {
         width: 100%;
