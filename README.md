@@ -1,15 +1,15 @@
-# Gastroenterology - Ujala Cygnus Hospitals Landing Page
+# lp-gastroenterology
 
 Responsive, high-converting Gastroenterology & Digestive Care landing page for Ujala Cygnus Hospitals.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fprembalchandra%2FGastroenterology)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fprembalchandra%2Flp-gastroenterology)
 
 ---
 
 ## 🚀 Live Demo & Deployment
 
-- **GitHub Repository**: [https://github.com/prembalchandra/Gastroenterology](https://github.com/prembalchandra/Gastroenterology)
-- **1-Click Deploy on Vercel**: [Deploy to Vercel](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fprembalchandra%2FGastroenterology)
+- **GitHub Repository**: [https://github.com/prembalchandra/lp-gastroenterology](https://github.com/prembalchandra/lp-gastroenterology)
+- **1-Click Deploy on Vercel**: [Deploy to Vercel](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fprembalchandra%2Flp-gastroenterology)
 
 ---
 
@@ -39,6 +39,6 @@ Responsive, high-converting Gastroenterology & Digestive Care landing page for U
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/prembalchandra/Gastroenterology.git
+   git clone https://github.com/prembalchandra/lp-gastroenterology.git
    ```
 2. Open `index.html` in your web browser or run using VS Code Live Server / any HTTP server.
