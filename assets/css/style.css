@@ -21,7 +21,7 @@ a {
 }
 
 body {
-   font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     background-color: rgb(255, 255, 255);
     color: var(--navy);
     line-height: 1.5;
@@ -152,7 +152,7 @@ header#navbar {
 .hero-actions {
     display: flex;
     flex-wrap: wrap;
-    gap: 14px;
+    gap: 10px;
 }
 
 .btn {
@@ -928,7 +928,11 @@ header#navbar {
     flex: 1 1 0%;
 }
 
-.section-eyebrow {display: inline-flex;align-items: center;gap: 10px;}
+.section-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
 
 .section-eyebrow::after {
     content: "";
@@ -1389,22 +1393,22 @@ header#navbar {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 12px;
+    gap: 9px;
     margin-bottom: 27px;
 }
 
 .trust-badge {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
+    gap: 6px;
     background-color: #fff;
-    padding: 8px 18px;
+    padding: 8px 15px;
     border-radius: 9999px;
     border: 1px solid #e7e7e7;
 }
 
 .trust-badge-icon img {
-    max-width: 26px;
+    max-width: 22px;
 }
 
 .trust-badge-text {
@@ -1572,7 +1576,7 @@ iframe {
 
     .btn {
         width: max-content;
-        max-width: 200px;
+        max-width: 170px;
         font-size: 14px;
     }
 
@@ -1602,7 +1606,7 @@ iframe {
     }
 
     .problem-section .section-title {
-        font-size: 21px;
+        font-size: 20px;
     }
 
     .problem-section .section-subtitle {
@@ -1621,21 +1625,10 @@ iframe {
 
     .problem-disclaimer-text {
         text-align: center;
+        font-size: 13px;
     }
 }
 
-@media (max-width: 960px) {
-    .care-journey-layout {
-        grid-template-columns: 1fr;
-        gap: 36px;
-    }
-
-    .care-journey-photo {
-        max-width: 600px;
-        width: 100%;
-        margin: 0px auto;
-    }
-}
 
 @media (max-width: 560px) {
     .care-journey-section {
@@ -1690,6 +1683,10 @@ iframe {
     .cards-grid {
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+
+    .problem-card-desc {
+        max-width: 213px;
     }
 
     .services-section .section-title {
@@ -1775,6 +1772,23 @@ iframe {
 }
 
 @media (max-width: 991px) {
+    .care-journey-layout {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .care-journey-content {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .care-journey-photo {
+        max-width: 600px;
+        width: 100%;
+        margin: 0px auto;
+    }
+
     .video-section-area {
         padding: 45px 0px;
     }
@@ -1834,7 +1848,7 @@ iframe {
 
     .video-card-btns .btn {
         width: 100%;
-        padding: 7px 19px;
+        padding: 7px 6px;
         font-size: 14px;
     }
 }
@@ -1897,7 +1911,6 @@ iframe {
 
 @media (max-width: 480px) {
     .hero-actions {
-        flex-direction: column;
         align-items: stretch;
     }
 
@@ -1916,7 +1929,7 @@ iframe {
 
     .hospital-locations h2 {
         font-size: 26px;
-        margin-bottom: 22px;
+        margin-bottom: 5px;
     }
 
     .hospital-locations ul.menu-footer-our-hospitals-list {
@@ -1961,8 +1974,7 @@ iframe {
     }
 
     .hero-content,
-    .form-card {
-    }
+    .form-card {}
 
     .hero-title {
         font-size: clamp(1.8rem, 3.5vw, 2.4rem);
@@ -2026,6 +2038,8 @@ iframe {
 
     .hero-actions {
         justify-content: left;
+        flex-wrap: nowrap;
+        gap: 7px;
     }
 
     .hero-actions .btn {}
@@ -2337,16 +2351,20 @@ iframe {
     background: linear-gradient(110deg, rgb(23, 54, 103) 0%, rgb(29, 64, 116) 45%, rgb(65, 109, 159) 100%);
     padding: 55px 0px;
 }
+
 .hero-buttons {
     display: flex;
-    gap: 10px;
+    gap: 8px;
+    flex-wrap: wrap;
 }
+
 .heart-check-container {
     display: grid;
     grid-template-columns: 1fr 545px;
     align-items: center;
     gap: 32px;
 }
+
 .heart-check-title {
     color: rgb(255, 255, 255);
     font-size: clamp(24px, 3.2vw, 36px);
@@ -2355,6 +2373,7 @@ iframe {
     margin-bottom: 12px;
     text-align: start;
 }
+
 .heart-check-description {
     color: rgba(255, 255, 255, 0.82);
     font-size: 14px;
@@ -2363,6 +2382,7 @@ iframe {
     max-width: 520px;
     margin-bottom: 25px;
 }
+
 @media (max-width: 991px) {
     .heart-check-container {
         grid-template-columns: 1fr;
@@ -2502,6 +2522,7 @@ iframe {
             opacity: 0;
             transform: translateY(-8px);
         }
+
         to {
             opacity: 1;
             transform: translateY(0);
@@ -2569,8 +2590,13 @@ iframe {
     }
 
     @keyframes backdropFadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
     }
 }
 
@@ -2578,14 +2604,17 @@ iframe {
     .pill-title {
         font-size: 14px;
     }
+
     .pill-content-left {
         gap: 8px;
     }
+
     .pill-phone-icon {
         width: 32px;
         height: 32px;
         min-width: 32px;
     }
+
     .mobile-sticky-pill {
         padding: 8px 12px;
     }
