@@ -1022,6 +1022,283 @@ header#navbar {
 }
 
 
+/* ==========================================================================
+   Doctors Slider Section (Exact Match to Design)
+   ========================================================================== */
+.doctors-section {
+    position: relative;
+    width: 100%;
+    padding: 60px 0 65px;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.doctor-slider-wrapper {
+    position: relative;
+    padding: 10px 48px 30px;
+}
+
+.doctor-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 4px 15px;
+}
+
+.doctor-slider .swiper-slide {
+    height: auto;
+    display: flex;
+}
+
+.doctor-card {
+    background: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #d9e3eb;
+    box-shadow: 0 4px 18px rgba(15, 34, 64, 0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.doctor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(15, 34, 64, 0.09);
+    border-color: #cbd5e1;
+}
+
+.doctor-card-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.doctor-image {
+    width: 100%;
+    height: 280px;
+    background: linear-gradient(180deg, #f8fafc 0%, #edf2f7 100%);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.doctor-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.doctor-card:hover .doctor-image img {
+    transform: scale(1.02);
+}
+
+.doctor-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 18px 20px 22px;
+    flex-grow: 1;
+    background: #ffffff;
+}
+
+.doctor-info-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.doctor-info .doctor-name {
+    color: #1e3c6c;
+    font-size: 19px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.35;
+}
+
+.doctor-info .doctor-designation {
+    font-size: 14px;
+    font-weight: 600;
+    color: #b51665;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.doctor-info .doctor-experience {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #1e3c6c;
+    margin: 3px 0 0;
+    line-height: 1.4;
+}
+
+.doctor-info .doctor-hospital {
+    font-size: 13px;
+    color: #64748b;
+    margin: 2px 0 0;
+    line-height: 1.4;
+}
+
+.doctor-info-link {
+    margin-top: 14px;
+    padding-top: 4px;
+}
+
+.doctor-info-link a {
+    color: #0b3f82;
+    white-space: nowrap;
+    font-size: 13.5px;
+    font-weight: 700;
+    text-decoration: underline 1.5px;
+    text-underline-offset: 3px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.2s ease;
+}
+
+.doctor-info-link a:hover {
+    color: #b51665;
+}
+
+
+
+
+
+/* Nav Buttons (White circular button with blue chevron exactly matching user design) */
+.doctor-slider-wrapper .doctor-prev,
+.doctor-slider-wrapper .doctor-next {
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    border: 1px solid rgb(226, 232, 240);
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    color: rgb(11, 79, 138);
+    top: 45%;
+    transition: 0.25s;
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.doctor-slider-wrapper .doctor-prev:hover,
+.doctor-slider-wrapper .doctor-next:hover {
+     background: rgb(11, 79, 138);
+    color: rgb(255, 255, 255);
+    border-color: rgb(11, 79, 138);
+}
+
+.doctor-slider-wrapper .doctor-prev {
+    left: 0;
+}
+
+.doctor-slider-wrapper .doctor-next {
+    right: 0;
+}
+
+.doctor-slider-wrapper .doctor-prev::after,
+.doctor-slider-wrapper .doctor-next::after {
+    font-size: 15px !important;
+    font-weight: 700;
+}
+
+/* Pagination Dots (Matching Image 2: Circular deep blue active dot) */
+.doctor-pagination {
+    position: relative;
+    bottom: var(--swiper-pagination-bottom, -19px) !important;
+    text-align: center;
+    margin-top: 39px !important;
+}
+
+.doctor-pagination .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: rgb(203, 213, 225);
+    opacity: 1;
+    transition: all 0.3s ease;
+    margin: 0 4px;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.doctor-pagination .swiper-pagination-bullet-active {
+    background: rgb(11, 79, 138);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+/* Responsiveness */
+@media (max-width: 991px) {
+    .doctors-section {
+        padding: 45px 0 50px;
+    }
+
+    .doctor-slider-wrapper {
+        padding: 0 36px 20px;
+    }
+
+    .doctor-image {
+        height: 340px;
+    }
+
+    .doctor-slider-wrapper .doctor-prev,
+    .doctor-slider-wrapper .doctor-next {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+@media (max-width: 768px) {
+    .doctors-section {
+        padding: 38px 0 45px;
+    }
+
+    .doctor-slider-wrapper {
+        padding: 0 10px 15px;
+    }
+
+    .doctor-image {
+        height: 320px;
+    }
+
+    .doctor-slider-wrapper .doctor-prev,
+    .doctor-slider-wrapper .doctor-next {
+        width: 34px;
+        height: 34px;
+    }
+
+    .doctor-slider-wrapper .doctor-prev::after,
+    .doctor-slider-wrapper .doctor-next::after {
+        font-size: 13px !important;
+    }
+
+    .doctor-info {
+        padding: 16px 16px 18px;
+    }
+
+    .doctor-info .doctor-name {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 480px) {
+    .doctor-image {
+        height: 290px;
+    }
+
+    .doctor-slider-wrapper {
+        padding: 0 4px 15px;
+    }
+}
+
+
 .reviews-section {
     position: relative;
     width: 100%;

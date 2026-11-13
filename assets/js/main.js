@@ -1,4 +1,38 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // Doctors Swiper Slider
+    const doctorSlider = document.querySelector(".doctor-slider");
+    if (doctorSlider && typeof Swiper !== "undefined") {
+        new Swiper(doctorSlider, {
+            slidesPerView: 1,
+            spaceBetween: 18,
+            loop: true,
+            grabCursor: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+            },
+            pagination: {
+                el: ".doctor-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".doctor-next",
+                prevEl: ".doctor-prev",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 24,
+                },
+            },
+        });
+    }
+
     // Review Swiper Slider
     new Swiper(".review-slider", {
         slidesPerView: 1,
